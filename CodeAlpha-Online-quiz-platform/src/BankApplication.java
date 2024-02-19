@@ -45,4 +45,8 @@ public class BankApplication {
             System.out.println("Invalid amount. Please Enter a positive number.");
         }
     }
+
+    private static void withdraw(){
+        System.out.println("Enter amount to withdraw: ");
+    }
 }
