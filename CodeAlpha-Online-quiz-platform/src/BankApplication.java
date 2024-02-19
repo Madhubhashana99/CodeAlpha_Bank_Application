@@ -31,4 +31,18 @@ public class BankApplication {
         }while (choice!=4);
         scanner.close();
     }
+
+    //Deposit amount
+    private static void deposit(){
+        System.out.println("Enter amount to deposit: ");
+        double amount = scanner.nextDouble();
+
+        if(amount>0){
+            balance+=amount;
+            System.out.println("Deposit success. Your new balance is: "+balance);
+        }
+        else{
+            System.out.println("Invalid amount. Please Enter a positive number.");
+        }
+    }
 }
