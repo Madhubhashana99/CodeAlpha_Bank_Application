@@ -17,10 +17,13 @@ public class BankApplication {
 
             switch(choice){
                 case 1:
+                    deposit();
                     break;
                 case 2:
+                    withdraw();
                     break;
                 case 3:
+                    checkBalance();
                     break;
                 case 4:
                     System.out.println("Thanks for using the banking application!");
