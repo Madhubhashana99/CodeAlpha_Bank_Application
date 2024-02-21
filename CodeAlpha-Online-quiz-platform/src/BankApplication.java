@@ -47,6 +47,16 @@ public class BankApplication {
     }
 
     private static void withdraw(){
+
         System.out.println("Enter amount to withdraw: ");
+        double amount = scanner.nextDouble();
+        if (amount>0 && amount<=balance){
+            balance-=amount;
+            System.out.println("Withdraw successful. Your new balance is: "+balance);
+        }else if(amount <= 0){
+            System.out.println("Invalid amount. Please enter a positive number. ");
+        }else {
+            System.out.println("Insufficient funds. Your current balance is: "+balance);
+        }
     }
 }
