@@ -59,4 +59,8 @@ public class BankApplication {
             System.out.println("Insufficient funds. Your current balance is: "+balance);
         }
     }
+
+    private static void checkBalance(){
+        System.out.println("Your current balance is: " + balance);
+    }
 }
